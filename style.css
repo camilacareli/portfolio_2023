@@ -55,8 +55,8 @@ hr{
 /*Navbar*/
 header { 
     box-shadow: 0px 4px 6px #0000001a;
-    position: fixed;
-    display: flex;
+    position:fixed;
+    display:inline-flex;
     justify-content: space-between;
     top: 0;
     right: 0;
@@ -64,6 +64,7 @@ header {
     align-items: center;
     padding: 2vh 10vh;
     z-index: 999;
+    background-color: var(--bg-color);
 }
 .navbar{
     display: flex;
@@ -76,10 +77,8 @@ header {
 }
 .navbar a:hover{
     cursor: pointer;
-    background-color:  var(--main-color2);
-    border-radius: 1vh;
     padding: 1vh;
-    color: var(--bg-color);
+    color: var(--main-color);
     font-weight: bold;
 }
 
@@ -137,13 +136,11 @@ header {
     box-shadow: 0px 10px 20px var(--main-color2);
 }
 .profile-img{
-
     padding-right: 10%;
 }
 
 /*Projetos*/
 #projects{
-    display: flex;
     align-items: center;
 }
 .projects-text h3{
@@ -152,17 +149,92 @@ header {
 .projects-text h2{
     font-size: var(--h2-font);
 }
-.projects-text p{
+.span-link {
+    cursor: pointer;
+    font-style: italic;
+}
+.span-link:hover {
+    cursor: pointer;
+    box-shadow: 0px 10px 20px var(--main-color);
+    border-radius: 1vh;
+    color: var(--main-color);
+    font-style: italic;
+}
+.projects-card{
+    background-color: var(--text-color2);
+    border-radius: 1vh;
+    padding: 3vh;
+    margin: 5vh;
+    text-align: justify;
+    opacity: 0.8;
+    box-shadow: 0px 10px 20px var(--main-color2);
+}
+.span-card{
+    color: var(--bg-color);
+    font-style: italic;
+}
+.projects-card p{
     font-size: var(--p-font);
     color: var(--text-color);
     text-align: justify;
 }
-.span-link {
+.projects-card:hover h2{
+    color: var(--text-color2);
+}
+.projects-card:hover{
+    background-color: var(--main-color);
+    opacity: 1;
     cursor: pointer;
 }
-.span-link:hover {
-    cursor: pointer;
+.projects-card:hover p{
+    font-size: var(--p-font);
+    color: var(--bg-color);
+    text-align: justify;
+}
+
+/*Habilidades*/
+#skills{
+    display: flex;
+    align-items: center;
+}
+.skills-text h3{
+    font-size: var(--h3-font);
+}
+.skills-text h2{
+    font-size: var(--h2-font);
+}
+.skills-text p{
+    font-size: var(--p-font);
+    color: var(--text-color);
+    text-align: justify;
+}
+.span-skills{
+    color: var(--text-color2);
+        font-style: italic;
+}
+
+/*Contatos*/
+#contacts{
+    display: flex;
+    box-shadow: 0px -4px 6px #0000001a;
+    position:relative;
+    display: flex;
+    bottom: 0;
+    right: 0;
+    width: 100%;
+    align-items: center;
+    padding: 2vh 10vh;
+    z-index: 999;
+    justify-content: center;
+}
+.contacts-img{
+    border-radius: 25vh;
     box-shadow: 0px 10px 20px var(--main-color2);
-    border-radius: 1vh;
-    color: var(--main-color2);
+}
+.span-contacts{
+    color: var(--text-color2);
+    font-style: italic;
+}
+.contacts-icons{
+    margin: 10vh;
 }
